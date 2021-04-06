@@ -14,9 +14,11 @@ export const GlobalStyles = createGlobalStyle`
         --text-color: #333;
         --text-color-light: #707070;
         --primary-color: #6730e3;
-        --secondary-color: #202877 ;
+        --secondary-color: #202877;
+        --blue-color: #007BFF;
+
         --gradient: linear-gradient(to right, rgba(32, 40, 119, 1), rgba(55, 46, 149, 1), rgba(83, 49, 177, 1), rgba(114, 48, 205, 1), rgba(150, 41, 230, 1));
-        --burger-color: #cecece;
+        --burger-color: #888;
         --font-stack: 'Open Sans', Helvetica, sans-serif;
         --font-secondary: 'Montserrat';
     }
@@ -55,7 +57,7 @@ export const GlobalStyles = createGlobalStyle`
         width: 100%;
         max-width: 1200px;
         margin: 0 auto;
-        padding: 1rem 2rem;
+        padding: 2rem;
         overflow: hidden;
     }
 

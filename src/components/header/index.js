@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { Container, Nav, Logo, Burger, Link, Line } from './styles/header'
 
 

@@ -8,15 +8,30 @@ export const Container = styled.header`
     top: 0;
     left: 0;
     z-index: 1000;
+    color: white;
+    box-shadow: 0 1px 5px rgba(0,0,0, 0);
     background: transparent;
-    transition: background 200ms linear;
+    transition: background 200ms linear 200ms, color 250ms linear, box-shadow 200ms linear;
 
     &.scrolled {
-        background: var(--gradient);
+        color: #333;
+        background: white;
+        box-shadow: 0 1px 5px rgba(0,0,0, .25);
+
+        .logo {
+            filter: brightness(1);
+        }
     }
 
     &.open {
-        background: var(--gradient) !important;
+        color: #333;
+        background: white;
+        transition: background 200ms linear;
+        background: white !important;
+
+        .logo {
+            filter: brightness(1);
+        }
     }
 `
 
@@ -25,10 +40,14 @@ export const Nav = styled.nav`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: inherit;
+    ${'' /* background: inherit;
+    transition: inherit; */}
 `
 
-export const Logo = styled.img``
+export const Logo = styled.img`
+    filter: brightness(0) invert(1);
+    transition: filter 50ms linear 200ms;
+`
 
 export const Burger = styled.div`
     width: 2.5rem;

@@ -12,7 +12,6 @@ function HeaderContainer() {
                    (document.documentElement && 
                       document.documentElement.scrollTop) || // 
                    document.body.scrollTop; 
-                   console.log(scrolledVal);
             if (scrolledVal >= 100) {
                 setIsScrolled(true);
             } else {

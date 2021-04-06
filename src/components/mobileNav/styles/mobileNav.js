@@ -8,18 +8,22 @@ export const Container = styled.nav`
     top: 6rem;
     left: 0;
     overflow: hidden;
-    background: inherit;
+    background-color: white;
     transition: height 200ms ease-in-out;
+
 
     @media screen and (min-width: 900px) {
         width: auto;
         position: static;
         background: transparent;
         height: auto !important;
+        box-shadow: 0 0 0 rgba(0,0,0, 0);
     }
 
     &.open {
         height: 185px;
+        transition: height 200ms ease-in-out 200ms;
+        box-shadow: 0 10px 10px rgba(0,0,0, 0.2);
     }
 `
 
@@ -43,7 +47,7 @@ export const RouterLink = styled(ReactRouterLink)``
 export const Link = styled.a`
     display: inline-block;
     padding: 0.25rem;
-    color: white;
+    color: inherit;
     opacity: 0.8;
     font-size: 1.4rem;
     transition: opacity 150ms linear;

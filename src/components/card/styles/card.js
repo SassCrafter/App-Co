@@ -3,9 +3,17 @@ import styled from 'styled-components/macro'
 export const Container = styled.div`
 	width: 100%;
 	padding: 2rem;
-	margin-bottom: 2rem;
-	box-shadow: 2px 2px 10px rgba(0,0,0, 0.1);
+	border-radius: 1.5rem;
+	margin-bottom: 3rem;
+	box-shadow: 0 3px 20px 0px rgba(0,0,0, 0.2);
 	text-align: center;
+	transition: transform 200ms ease-in-out, box-shadow 200ms ease-in-out;
+
+	:hover {
+		transform: translate3d(0, -2rem, 0);
+		box-shadow: 2px 8px 20px 0px rgba(0,0,0, 0.3);
+	}
+	
 
 	@media screen and (min-width: 768px) {
 		width: 32%;

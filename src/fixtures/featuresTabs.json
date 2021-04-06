@@ -1,0 +1,59 @@
+[
+	{
+		"id": 1,
+		"type": "sameFeatureIcon",
+		"iconClass": "fas fa-palette",
+		"title": "Design",
+		"featureIcon": "fas fa-check-circle",
+		"features": [
+			"Tones of SASS variables",
+			"Create your own skin to match your brand",
+			"Globally orchestrate tactical channels whereas bricks",
+			"Use Gulp to prepare all assets for production",
+			"Collaboratively predominate vertical manufactured"
+		]
+	},
+	{
+		"id": 2,
+		"type": "differentFeatureIcon",
+		"iconClass": "fas fa-terminal",
+		"title": "Development",
+		"features": [
+			{
+				"icon": "fas fa-copy",
+				"title": "Easy to use",
+				"description": "Synergistically deliver next-generation relationships whereas bleeding-edge resources. Continually pontificate stand-alone benefits whereas."
+			},
+			{
+				"icon": "fas fa-copy",
+				"title": "Increase conversion",
+				"description": "Phosfluorescently empower compelling intellectual capital and revolutionary web services. Compellingly develop cross-media."
+			}
+		]
+	},
+	{
+		"id": 3,
+		"type": "differentFeatureIcon",
+		"iconClass": "far fa-chart-bar",
+		"title": "Marketing",
+		"features": [
+			{
+				"icon": "far fa-chart-bar",
+				"title": "Increase conversion",
+				"description": "Display recent conversions, build credibility and trust."
+			},
+			{
+				"icon": "fas fa-chart-line",
+				"title": "Product analytics",
+				"description": "A top promo bar that counts down until a few discounts."
+			}
+		]
+	}, {
+		"id": 4,
+		"type": "noFeatureIcon",
+		"title": "Marketing",
+		"iconClass": "fas fa-headset",
+		"description": "I have, to push possibilities, to show people, this is the level that things could be at. So when you get something that has the name Kanye West on it, it’s supposed to be pushing the furthest possibilities. I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus."
+	}
+
+]
