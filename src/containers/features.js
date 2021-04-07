@@ -4,7 +4,41 @@ import FeaturesTabs from '../fixtures/featuresTabs.json'
 
 
 function FeaturesContainer() {
-    const [activeTab, setActiveTab] = useState(0);
+    const [activeTabId, setActiveTabId] = useState(0);
+
+
+    const filterPanes = (item) => {
+        if (item.id === activeTabId) {
+            if (item.type === 'sameFeatureIcon') {
+                return item.features.map((feature, idx) => (
+                    <Tabs.PaneItem key={idx}>
+                        <Tabs.PaneContainer>
+                            <Tabs.PaneSameIcon >
+                                <i className={item.featureIcon}></i>
+                            </Tabs.PaneSameIcon>
+                            <Tabs.PaneDescription>{feature}</Tabs.PaneDescription>
+                        </Tabs.PaneContainer>
+                    </Tabs.PaneItem>
+                ))
+            } else if (item.type === 'differentFeatureIcon') {
+                return item.features.map((feature, idx) => (
+                    <Tabs.PaneItem key={idx} width='45%'>
+                        <Tabs.PaneContainer mb='2rem'>
+                            <Tabs.PaneIcon bg={feature.iconBg}>
+                                <i className={feature.icon}></i>
+                            </Tabs.PaneIcon>
+                            <Tabs.PaneTitle>{feature.title}</Tabs.PaneTitle>
+                        </Tabs.PaneContainer>
+                        <Tabs.PaneDescription>{feature.description}</Tabs.PaneDescription>
+                    </Tabs.PaneItem>
+                ))
+            } else if (item.type === 'noFeatureIcon') {
+                return <Tabs.PaneDescription>{item.description}</Tabs.PaneDescription>
+            }
+        }
+        return null
+    }
+
     return (
         <Section>
             <div className='container'>
@@ -18,7 +52,7 @@ function FeaturesContainer() {
                             <Tabs>
                                 <Tabs.List>
                                     {FeaturesTabs.map((item, idx) => (
-                                        <Tabs.Tab key={item.id} className={activeTab === idx ? 'active' : ''}>
+                                        <Tabs.Tab key={item.id} tabId={item.id} setActiveTabId={setActiveTabId} className={activeTabId === idx ? 'active' : ''}>
                                             <Tabs.TabIcon>
                                                 <i className={item.iconClass}
                                                 ></i>
@@ -27,6 +61,12 @@ function FeaturesContainer() {
                                         </Tabs.Tab>
                                     ))}
                                 </Tabs.List>
+                                <Tabs.Pane>
+                                    
+                                    <Tabs.PaneList>
+                                        {FeaturesTabs.map(item => filterPanes(item))}
+                                    </Tabs.PaneList>
+                                </Tabs.Pane>
                             </Tabs>
                         </Flex.Column>
                         <Flex.Column>

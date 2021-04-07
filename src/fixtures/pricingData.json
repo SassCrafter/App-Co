@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "active": false,
+        "title": "Basic",
+        "icon": "/images/pricing/icons/basic.svg",
+        "price": 29,
+        "features": [
+            "Push Notifications",
+            "Data Transfer",
+            "SQL Database",
+            "Search & SEO Analytics",
+            "24/7 Phone Support",
+            "2 months technical suppor",
+            "2+ profitable keyword"
+        ]
+    },
+    {
+        "id": 2,
+        "active": true,
+        "title": "Popular",
+        "icon": "/images/pricing/icons/basic.svg",
+        "price": 50,
+        "features": [
+            "Push Notifications",
+            "Data Transfer",
+            "SQL Database",
+            "Search & SEO Analytics",
+            "24/7 Phone Support",
+            "6 months technical suppor",
+            "30+ profitable keyword"
+        ]
+    },
+    {
+        "id": 3,
+        "active": false,
+        "title": "Extended",
+        "icon": "/images/pricing/icons/basic.svg",
+        "price": 120,
+        "features": [
+            "Push Notifications",
+            "Data Transfer",
+            "SQL Database",
+            "Search & SEO Analytics",
+            "24/7 Phone Support",
+            "1 year technical suppor",
+            "70+ profitable keyword"
+        ]
+    }
+]

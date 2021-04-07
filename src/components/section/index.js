@@ -11,19 +11,19 @@ function Section({ children, ...restProps }) {
 
 export default Section
 
-Section.Text = function SectionText({ children, textAlign='center', restProps }) {
-    return <Text textAlign={textAlign} {...restProps}>{children}</Text>
+Section.Text = function SectionText({ children, textAlign='center', textColor='inherit', ...restProps }) {
+    return <Text textAlign={textAlign} textColor={textColor} {...restProps}>{children}</Text>
 }
 
-Section.Title = function SectionTitle({ children, restProps }) {
+Section.Title = function SectionTitle({ children, ...restProps }) {
     return <Title {...restProps}>{children}</Title>
 }
 
-Section.Lead = function SectionLead({ children, restProps }) {
-    return <Lead {...restProps}>{children}</Lead>
+Section.Lead = function SectionLead({ children, color='var(--text-color-light)', ...restProps }) {
+    return <Lead color={color} {...restProps}>{children}</Lead>
 }
 
-Section.RegularWeight = function SectionRegularWeight({ children, restProps }) {
+Section.RegularWeight = function SectionRegularWeight({ children, ...restProps }) {
     return <RegularWeight {...restProps}>{children}</RegularWeight>
 }
 

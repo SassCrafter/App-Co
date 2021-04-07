@@ -1,14 +1,23 @@
 import styled from 'styled-components/macro'
 
 export const Container = styled.section`
-    padding: 3rem 0;
+    padding: 5rem 0;
     position: relative;
+    min-height: ${({ height }) => height || 'auto'};
+    ${({ pb }) => `
+    
+        padding-bottom: ${pb} !important; 
+    `
+    };
 
     @media screen and (min-width: 768px) {
-        padding: 5rem 0;
+        padding: 8rem 0;
     }
 
     ${({ bg }) => bg && `
+        background: url(${bg}) no-repeat center/cover;
+    `}
+    ${({ overlay, overlayOpacity }) => `
         ::before {
             content: '';
             width: 100%;
@@ -16,13 +25,19 @@ export const Container = styled.section`
             position: absolute;
             top: 0;
             left: 0;
-            background: url(${bg}) no-repeat top/cover;
-            z-index: -1;
+            background: ${overlay};
+            opacity: ${overlayOpacity || 1}
+        }
+
+        .container {
+            position: relative;
+            z-index: 2;
         }
     `}
 `
 //  Text
 export const Text = styled.div`
+    color: ${({textColor}) => textColor};
     text-align: ${({textAlign}) => textAlign};
 	max-width: 50rem;
 	margin: ${({ textAlign }) => textAlign === 'center' ? '0 auto 4rem auto' : '0 0 4rem'};
@@ -35,6 +50,7 @@ export const Text = styled.div`
 export const Title = styled.h2`
     font-size: 2.3rem;
     line-height: 1.3;
+    color: inherit;
 
     @media screen and (min-width: 600px) {
         font-size: 3rem;
@@ -50,7 +66,7 @@ export const RegularWeight = styled.span`
 
 export const Lead = styled.p`
 	font-size: 1.8rem;
-	color: var(--text-color-light);
+	color: ${({ color }) => color};
 `
 
 //  Image
