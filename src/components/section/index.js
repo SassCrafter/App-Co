@@ -1,15 +1,19 @@
 import React from 'react'
-import { Container, Text, Title, Lead, RegularWeight, ImageContainer, Image } from './styles/section'
+import { Container, Item, Text, Title, Lead, RegularWeight, ImageContainer, Image } from './styles/section'
 
-function Section({ children, ...restProps }) {
+function Section({ children, py, bgPos='center center', ...restProps }) {
     return (
-        <Container {...restProps}>
+        <Container py={py} bgPos={bgPos} {...restProps}>
             {children}
         </Container>
     )
 }
 
 export default Section
+
+Section.Item = function SectionItem({ children, ...restProps }) {
+    return <Item {...restProps}>{children}</Item>
+}
 
 Section.Text = function SectionText({ children, textAlign='center', textColor='inherit', ...restProps }) {
     return <Text textAlign={textAlign} textColor={textColor} {...restProps}>{children}</Text>

@@ -3,7 +3,7 @@ import { Section, Flex, Button } from '../components'
 
 function DownloadContainer() {
     return (
-        <Section height='55vh' pb='0' bg='/images/hero/bg.jpg' overlay='var(--gradient)' overlayOpacity='0.8'>
+        <Section height='80vh' maxHeight='600px' py='0' bg='/images/hero/bg.jpg' overlay='var(--gradient)' overlayOpacity='0.8'>
             <div className='container'>
                 <Flex>
                     <Flex.Row>
@@ -27,8 +27,8 @@ function DownloadContainer() {
                                 </Button>
                             </Button.Container>
                         </Flex.Column>
-                        <Flex.Column>
-                            <Section.Image height='100%' src='/images/download/app-hand-top.png' alt='hand' />
+                        <Flex.Column alignSelf='flex-end'>
+                            <Section.Image  src='/images/download/app-hand-top.png' alt='hand' />
                         </Flex.Column>
                     </Flex.Row>
                 </Flex>

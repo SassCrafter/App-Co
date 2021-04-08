@@ -2,6 +2,7 @@ import React from 'react'
 import { Container, Inner, IconContainer, Icon } from './styles/button'
 
 function Button({ children, color='var(--primary-color)', bg='white', styleType='solid', restProps }) {
+    console.log("Primary button invoked")
     return (
         <Inner color={color} bg={bg} styleType={styleType} {...restProps}>
             {children}

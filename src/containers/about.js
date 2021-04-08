@@ -4,7 +4,7 @@ import AboutFeaturesData from '../fixtures/aboutFeaturesData.json'
 
 function AboutContainer() {
     return (
-        <Section bg='/images/about/about-bg-shape.svg'>
+        <Section bg='/images/about/about-bg-shape.svg' bgPos='top left'>
             <div className='container'>
                 <Flex>
                     <Flex.Row>

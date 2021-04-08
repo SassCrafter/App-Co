@@ -4,18 +4,23 @@ export const Container = styled.section`
     padding: 5rem 0;
     position: relative;
     min-height: ${({ height }) => height || 'auto'};
-    ${({ pb }) => `
+    ${({ py }) => `
     
-        padding-bottom: ${pb} !important; 
+        padding-bottom: ${py} !important; 
     `
     };
 
     @media screen and (min-width: 768px) {
-        padding: 8rem 0;
+        padding: ${({ py }) => py || '8rem'} 0;
+        height: ${({ height }) => height || 'auto'};
+        max-height: ${({ maxHeight }) => maxHeight || 'auto'};
     }
 
-    ${({ bg }) => bg && `
-        background: url(${bg}) no-repeat center/cover;
+    ${({ bg, bgPos }) => bg && `
+        background: url(${bg});
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: ${bgPos};
     `}
     ${({ overlay, overlayOpacity }) => `
         ::before {
@@ -35,6 +40,15 @@ export const Container = styled.section`
         }
     `}
 `
+
+export const Item = styled.div`
+    margin-bottom: 4rem;
+
+    @media screen and (min-width: 900px) {
+        margin-bottom: 6rem;
+    }
+`
+
 //  Text
 export const Text = styled.div`
     color: ${({textColor}) => textColor};
@@ -73,7 +87,11 @@ export const Lead = styled.p`
 
 export const ImageContainer = styled.div`
     display: flex;
-    justify-content: ${({ justify }) => justify}
+    justify-content: ${({ justify }) => justify};
+    max-height: ${({ mheight}) => mheight || 'auto'};
 `
 
-export const Image = styled.img``
+export const Image = styled.img`
+    max-width: 100%;
+    ${'' /* max-width: 40rem; */}
+`

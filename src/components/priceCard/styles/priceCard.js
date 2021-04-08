@@ -1,7 +1,8 @@
 import styled from 'styled-components/macro'
 import { Button as Btn } from '../../index'
-
+    
 export const Container = styled.div`
+    background: ${({ bg }) => bg};
     padding: 2rem;
     text-align: center;
     box-shadow: 0 0 5px 1px #eae8e8;
@@ -16,13 +17,15 @@ export const Container = styled.div`
 
     &:hover,
     &.active {
-        border-radius: 2rem;
-        box-shadow: 0 1rem 2rem rgba(31,45,61,.275);
-    }
-
-    &.active {
+        box-shadow: 0 1rem 3rem rgba(31,45,61,.135);
         border-color: var(--primary-color);
     }
+
+    &:hover {
+        border-radius: 2.5rem;
+    }
+
+    
 
     @media screen and (min-width: 768px) {
         &:hover,
@@ -42,7 +45,7 @@ export const Title = styled.h3`
 
 export const IconContainer = styled.div`
     width: 100%;
-    max-width: 15rem;
+    max-width: 8rem;
     margin-bottom: 2rem;
 `
 
@@ -67,10 +70,13 @@ export const List = styled.ul`
 export const Li = styled.li`
     margin: 0.5rem 0;
     color: var(--text-color-light);
+    font-size: 1.4rem;
 `
 
+
 export const Button = styled(Btn)`
-    ${({ styleType }) => {
+    color: red;
+    ${'' /* ${({ styleType }) => {
         console.log(styleType);
 
         return styleType === 'solid' ? `
@@ -83,5 +89,5 @@ export const Button = styled(Btn)`
         ` : `
         
         `
-    }}
+    }} */}
 `

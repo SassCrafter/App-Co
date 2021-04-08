@@ -4,6 +4,7 @@ import { Link as ReactRouterLink } from 'react-router-dom'
 export const Container = styled.header`
     ${'' /* background: var(--secondary-color); */}
     width: 100%;
+    height: 6rem;
     position: fixed;
     top: 0;
     left: 0;

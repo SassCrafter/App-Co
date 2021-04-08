@@ -1,9 +1,9 @@
 import React from 'react'
 import { Container, Title, IconContainer, Icon , Price, Line, List, Li, Button } from './styles/priceCard'
 
-function PriceCard({ children, ...restProps }) {
+function PriceCard({ children, bg='white', ...restProps }) {
     return (
-        <Container {...restProps}>
+        <Container bg={bg} {...restProps}>
             {children}
         </Container>
     )
@@ -40,5 +40,6 @@ PriceCard.Li = function PriceCardLi({ children, ...restProps }) {
 }
 
 PriceCard.Button = function PriceCardButton({ children, styleType='solid', ...restProps }) {
+    console.log("Price button invoked")
     return <Button styleType={styleType} {...restProps}>{children}</Button>
 }
