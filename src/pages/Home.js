@@ -8,6 +8,8 @@ import DownloadContainer from '../containers/download'
 import PricingContainer from '../containers/pricing'
 import TestimonialsContainer from '../containers/testimonials'
 import ScreenshotsContainer from '../containers/screenshots'
+import TeamContainer from '../containers/team'
+import ContactContainer from '../containers/contact'
 
 function Home() {
     return (
@@ -20,7 +22,9 @@ function Home() {
           <DownloadContainer />
           <PricingContainer />
           <TestimonialsContainer />
-          <ScreenshotsContainer />
+          
+          <TeamContainer />
+          <ContactContainer />
         </>
     )
 }

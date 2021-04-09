@@ -15,5 +15,8 @@ export { default as Faqs } from './faqs'
 export { default as Icon } from './icon'
 export { default as TestimonialsSlider } from './testimonialsSlider'
 export { default as ScreenshotsSlider } from './screenshotsSlider'
+export { default as TeamCard } from './teamCard'
+export { default as Form } from './form'
+export { default as ContactForm } from './contactForm'
 
 export { default as Prices } from './specific/prices'
