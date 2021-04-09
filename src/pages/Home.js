@@ -6,6 +6,8 @@ import AboutContainer from '../containers/about'
 import FeaturesContainer from '../containers/features'
 import DownloadContainer from '../containers/download'
 import PricingContainer from '../containers/pricing'
+import TestimonialsContainer from '../containers/testimonials'
+import ScreenshotsContainer from '../containers/screenshots'
 
 function Home() {
     return (
@@ -17,6 +19,8 @@ function Home() {
           <FeaturesContainer />
           <DownloadContainer />
           <PricingContainer />
+          <TestimonialsContainer />
+          <ScreenshotsContainer />
         </>
     )
 }

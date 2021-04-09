@@ -4,6 +4,7 @@ export const Container = styled.section`
     padding: 5rem 0;
     position: relative;
     min-height: ${({ height }) => height || 'auto'};
+    background-color: ${({ bgColor }) => bgColor || 'transparent'} ;
     ${({ py }) => `
     
         padding-bottom: ${py} !important; 

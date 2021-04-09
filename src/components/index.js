@@ -12,5 +12,8 @@ export { default as Button } from './button'
 export { default as PriceCard } from './priceCard'
 export { default as Accordion } from './accordion'
 export { default as Faqs } from './faqs'
+export { default as Icon } from './icon'
+export { default as TestimonialsSlider } from './testimonialsSlider'
+export { default as ScreenshotsSlider } from './screenshotsSlider'
 
 export { default as Prices } from './specific/prices'

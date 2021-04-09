@@ -1,0 +1,26 @@
+[
+    {
+        "id": 0,
+        "image": "/images/screenshots/01.png"
+    },
+    {
+        "id": 1,
+        "image": "/images/screenshots/02.png"
+    },
+    {
+        "id": 2,
+        "image": "/images/screenshots/03.png"
+    },
+    {
+        "id": 3,
+        "image": "/images/screenshots/04.png"
+    },
+    {
+        "id": 4,
+        "image": "/images/screenshots/05.png"
+    },
+    {
+        "id": 5,
+        "image": "/images/screenshots/06.png"
+    }
+]
