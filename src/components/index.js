@@ -18,5 +18,6 @@ export { default as ScreenshotsSlider } from './screenshotsSlider'
 export { default as TeamCard } from './teamCard'
 export { default as Form } from './form'
 export { default as ContactForm } from './contactForm'
+export { default as Footer } from './footer'
 
 export { default as Prices } from './specific/prices'

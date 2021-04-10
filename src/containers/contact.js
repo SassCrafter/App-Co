@@ -4,10 +4,10 @@ import { Section, Flex, ContactForm } from '../components'
 
 function ContactContainer() {
 	return (
-		<Section>
+		<Section bgColor='#F4F7FA'>
 			<div className="container">
 				<Flex>
-					<Flex.Row wd>
+					<Flex.Row wd ai='flex-start'>
 						<Flex.Column>
 							<Section.Text textAlign='left'>
 								<Section.Title>

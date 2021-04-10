@@ -10,6 +10,7 @@ import TestimonialsContainer from '../containers/testimonials'
 import ScreenshotsContainer from '../containers/screenshots'
 import TeamContainer from '../containers/team'
 import ContactContainer from '../containers/contact'
+import FooterContainer from '../containers/footer'
 
 function Home() {
     return (
@@ -25,6 +26,7 @@ function Home() {
           
           <TeamContainer />
           <ContactContainer />
+          <FooterContainer />
         </>
     )
 }
